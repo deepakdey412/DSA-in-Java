@@ -4,6 +4,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/01_Basic_Maths" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/01_BASIC_PROBLEMS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/02 CLONING" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/03 FIND_TARGETS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/04 PAIRING" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/PROBLEMS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/RANDOM_QUE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_Array/Array_1D/TWO_POINTERS" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/04 Linklist" isTestSource="false" packagePrefix="LinkList" />
       <sourceFolder url="file://$MODULE_DIR$/06 Sorting_Algorithm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/08 Stack" isTestSource="false" />
