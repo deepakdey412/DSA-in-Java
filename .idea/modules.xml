@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02_Arrays/02_Arrays.iml" filepath="$PROJECT_DIR$/02_Arrays/02_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 Searching/05 Searching.iml" filepath="$PROJECT_DIR$/05 Searching/05 Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Arrays/Arrays_1D/Arrays_1D.iml" filepath="$PROJECT_DIR$/02_Arrays/Arrays_1D/Arrays_1D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-in-Java.iml" filepath="$PROJECT_DIR$/DSA-in-Java.iml" />
+    </modules>
+  </component>
+</project>
