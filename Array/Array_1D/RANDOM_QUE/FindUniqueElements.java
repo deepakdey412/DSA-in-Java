@@ -1,14 +1,14 @@
-package intermidate_problems;
+package Array.Array_1D.RANDOM_QUE;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class FindUniqueElements{
+public class FindUniqueElements {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 1, 3, 2, 4, 5, 1, 3, 2};
+        int[] arr = { 1, 2, 1, 3, 2, 4, 5, 1, 3, 2 };
 
         Set<Integer> result = removeDuplicates(arr);
-        System.out.println(result);  // Prints the Set
+        System.out.println(result); // Prints the Set
     }
 
     public static Set<Integer> removeDuplicates(int[] nums) {

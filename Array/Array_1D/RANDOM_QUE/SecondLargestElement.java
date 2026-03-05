@@ -1,8 +1,8 @@
-package intermidate_problems;
+package Array.Array_1D.RANDOM_QUE;
 
 public class SecondLargestElement {
     public static void main(String[] args) {
-        int[] arr = {12, 35, 1, 10, 34, 1};
+        int[] arr = { 12, 35, 1, 10, 34, 1 };
 
         int result = findSecondLargest(arr);
         if (result == Integer.MIN_VALUE) {
