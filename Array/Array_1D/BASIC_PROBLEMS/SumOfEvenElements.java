@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class SumOfEvenElements {
@@ -13,6 +14,7 @@ public class SumOfEvenElements {
 
         System.out.println("Sum of even elements of array is : " + evenSum(arr));
 
+        sc.close();
     }
 
     public static int evenSum(int[] arr) {
