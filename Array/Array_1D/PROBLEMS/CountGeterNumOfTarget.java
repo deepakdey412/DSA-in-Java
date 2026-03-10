@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CountGeterNumOfTarget {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr = {1, 2, 4, 5, 6, 7};
+        int[] arr = { 1, 2, 4, 5, 6, 7 };
         for (int value : arr) {
             System.out.print(value + " ");
         }
@@ -12,7 +12,10 @@ public class CountGeterNumOfTarget {
         int target = sc.nextInt();
 
         int allGreaterNumOccurance = findAllGreaterNumOcc(arr, target);
-        System.out.println("The Last occurance of the element greter than " + target + " is : " + allGreaterNumOccurance);
+        System.out
+                .println("The Last occurance of the element greter than " + target + " is : " + allGreaterNumOccurance);
+
+        sc.close();
     }
 
     public static int findAllGreaterNumOcc(int[] arr, int num) {

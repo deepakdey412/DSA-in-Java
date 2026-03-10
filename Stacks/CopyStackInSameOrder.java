@@ -1,4 +1,4 @@
-package Basic_stack_problems;
+package Stacks;
 
 import java.util.Stack;
 

@@ -1,30 +1,24 @@
+package Sorting_Algorithm;
+
 import java.util.Arrays;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] arr = {1, 54, 87, 4, 5, 1, 45, 2};
+        int[] arr = { 100, 8, 45, 71, 63, 78, 16 };
+
         System.out.println(Arrays.toString(insertionSort(arr)));
     }
 
     public static int[] insertionSort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
+
+        for (int i = 0; i < arr.length; i++) {
             int j = i;
-            while (j > 0 && arr[j] < arr[j - 1]) {
-                swap(j, j - 1, arr);
-                j--;
+            while (j > 0 && arr[j - 1] > arr[j]) {
+                int temp = arr[j - 1];
+                arr[j - 1] = arr[j];
+                arr[j] = temp;
             }
         }
         return arr;
     }
-
-    public static void swap(int first, int second, int[] arr) {
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
-    }
 }
-
-//Best case	    -> O(n) (array already sorted)
-//Worst case	-> O(n²) (array sorted in reverse)
-//Average case	-> O(n²)
-//Space Complexity: O(1)

@@ -1,29 +1,39 @@
+package Sorting_Algorithm;
+
 import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {4, 5, 8, 9, 47, 10, 6, 9, 8};
-        boolean swapped = false;
+        int[] arr = { 100, 8, 45, 71, 63, 78, 16 };
 
-        // Bubble Sort Implementation
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j] < arr[j + 1]) { // Descencding order
-                    // Swap the elements
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+        System.out.println(Arrays.toString(bubbleSort(arr)));
+    }
 
-                    swapped = true;// set true if swapped happened
-                }
-                // If no two elements were swapped, array is sorted
-                if (!swapped) {
-                    break;
+    public static int[] bubbleSort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            boolean isSwaped = false;
+            for (int j = 1; j < arr.length - i; j++) {
+                if (arr[j - 1] > arr[j]) {
+                    int temp = arr[j - 1];
+                    arr[j - 1] = arr[j];
+                    arr[j] = temp;
+                    isSwaped = true;
                 }
             }
+            if (!isSwaped) {
+                break;
+            }
         }
-
-        // Print the sorted array
-        System.out.println(Arrays.toString(arr));
+        return arr;
     }
 }
+
+// **Bubble Sort (Short Notes)**
+
+// * Compare **adjacent elements** and **swap if they are in the wrong order**.
+// * After each pass, the **largest element moves to the end**.
+// * **Time Complexity:**
+
+// * Worst & Average → `O(n²)`
+// * Best → `O(n)` (when using a **swapped flag** and array is already sorted)
+// * **Space Complexity:** `O(1)` (in-place sorting)

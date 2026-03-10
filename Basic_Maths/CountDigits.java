@@ -7,15 +7,18 @@ public class CountDigits {
         int inputNum = sc.nextInt();
 
         int totalNumOfDigits = countDigits(inputNum);
-        System.out.println("Number of digits are  : "+totalNumOfDigits);
+        System.out.println("Number of digits are  : " + totalNumOfDigits);
+
+        sc.close();
     }
-    public static int countDigits(int num){
-        int count =0;
-        while (num>0){
-            num = num/10;
+
+    public static int countDigits(int num) {
+        int count = 0;
+        while (num > 0) {
+            num = num / 10;
             count++;
         }
         return count;
     }
 }
-//Time Complexity : O(log10(N))
+// Time Complexity : O(log10(N))
