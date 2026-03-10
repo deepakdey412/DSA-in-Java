@@ -11,6 +11,7 @@ public class EquilateralAlgorithm {
 
         int resultGCD = findGCDByEquilaterlAlgo(firstNum, secondNum);
         System.out.println("the GCD of " + firstNum + " and  " + secondNum + " is : " + resultGCD);
+        sc.close();
     }
 
     public static int findGCDByEquilaterlAlgo(int num1, int num2) {
@@ -29,5 +30,5 @@ public class EquilateralAlgorithm {
     }
 }
 
-//TC . =
-//O(log to the base smallest number(min(num1, num2)))
+// TC . =
+// O(log to the base smallest number(min(num1, num2)))

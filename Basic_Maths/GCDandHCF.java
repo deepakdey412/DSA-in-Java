@@ -11,6 +11,7 @@ public class GCDandHCF {
 
         int resultGCD = findGCD(firstNum, secondNum);
         System.out.println("the GCD of " + firstNum + " , " + secondNum + " is : " + resultGCD);
+        sc.close();
     }
 
     public static int findGCD(int num1, int num2) {
@@ -23,4 +24,4 @@ public class GCDandHCF {
         return gcd;
     }
 }
-//TC = O(min(num1,num2))
+// TC = O(min(num1,num2))

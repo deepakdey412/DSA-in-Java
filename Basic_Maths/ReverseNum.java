@@ -5,19 +5,18 @@ public class ReverseNum {
         Scanner sc = new Scanner(System.in);
         int inputNum = sc.nextInt();
         countDigits(inputNum);
+        sc.close();
     }
 
     public static void countDigits(int num) {
         int rem = 0;
         while (num > 0) {
             rem = num % 10;
-            if(rem!=0){//Print only non-zero digits
-            System.out.print(rem);
+            if (rem != 0) {// Print only non-zero digits
+                System.out.print(rem);
             }
             num = num / 10;
         }
 
     }
 }
-
-
